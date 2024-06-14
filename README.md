@@ -1,2 +1,2 @@
-# FirstRepository
-FirstRepository
+# AzFuncTerraform
+AzFuncTerraform
