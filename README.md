@@ -1,2 +1,0 @@
-# AzFuncTerraform
-AzFuncTerraform
