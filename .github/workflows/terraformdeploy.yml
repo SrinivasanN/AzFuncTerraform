@@ -68,6 +68,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_8E6F14A4BF68406BBCA538700C3B8CE1 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_321D08A249CB4180BF610E7DE4114CB9 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DCD31E928AAD4A1CA94516D836E0DFF3 }}
+
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
