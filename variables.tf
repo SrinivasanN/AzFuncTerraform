@@ -37,6 +37,6 @@ variable "service_plan_name" {
 variable "azurerm_linux_function_app"{
     description = "Name of the Azure Function App"
     type        = string
-    default     = "terracodefunction"
+    default     = "AzFunctionsapps"
 }
 
